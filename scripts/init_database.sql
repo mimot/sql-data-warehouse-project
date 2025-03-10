@@ -1,14 +1,15 @@
 --Create new database "DataWarehouse" and connect to it
 USE master;
-IF DB_ID('DataWarehouse') IS NOT NULL
+IF DB_ID('AWorks_DW') IS NOT NULL
 BEGIN
-	DROP DATABASE DataWarehouse;
+	DROP DATABASE AWorks_DW;
 END 
 BEGIN
-	CREATE DATABASE DataWarehouse;
+	CREATE DATABASE AWorks_DW;
 END 
+GO
 
-USE DataWarehouse;
+USE AWorks_DW;
 
 --Create schemas
 
